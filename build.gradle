@@ -11,7 +11,8 @@ dependencies {
 }
 
 pmd {
-    toolVersion = '6.39.0'
-    ruleSetFiles = files("pmd.xml")
-    ruleSets = []
+    consoleOutput = true
+    toolVersion = "6.39.0"
+    rulesMinimumPriority = 5
+    ruleSets = ["category/java/errorprone.xml", "category/java/bestpractices.xml"]
 }
