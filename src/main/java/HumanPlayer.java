@@ -6,7 +6,7 @@
 
 import java.util.Scanner;
 
-public class HumanPlayer extends Player {
+public class HumanPlayer extends AbstractPlayer {
 
     /**
      * Constructor that instantiates a monster
