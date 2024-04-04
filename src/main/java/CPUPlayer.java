@@ -5,7 +5,7 @@
  */
 
 import java.util.Random;
-public class CPUPlayer extends Player {
+public class CPUPlayer extends AbstractPlayer {
     
     /**
      * Constructor that instantiates a monster
