@@ -7,7 +7,7 @@ public class GameDriver {
 
         Monster monster = new Monster("Bulbasaur", "Grass",240, 45, 49, 49, move1, move2, move3, move4);
     
-        Player player = new HumanPlayer(monster);
+        AbstractPlayer player = new HumanPlayer(monster);
         move1 = new Move("Scratch", "Normal", 40, 1.0f);
         move2 = new Move("Ember", "Fire", 40, 1.0f);
         move3 = new Move("Peck", "Flying", 35, 1.0f);
@@ -15,7 +15,7 @@ public class GameDriver {
 
         monster = new Monster("Torchic", "Fire", 240, 45, 60, 40, move1, move2, move3, move4);
    
-        Player enemy = new CPUPlayer(monster);
+        AbstractPlayer enemy = new CPUPlayer(monster);
 
         while ((!player.hasLost()) && (!enemy.hasLost())) {
             
