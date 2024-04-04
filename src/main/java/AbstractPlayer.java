@@ -6,7 +6,7 @@
 
 import java.util.Random;
 
-public abstract class Player {
+public abstract class AbstractPlayer {
     Monster monster;
 
     /**
@@ -37,7 +37,7 @@ public abstract class Player {
      * @param enemy is the opponent
      * @return either true or false
      */
-    public boolean isFasterThan(Player enemy) {
+    public boolean isFasterThan(AbstractPlayer enemy) {
         if (this.monster.getSpeed() >= enemy.getMonster().getSpeed()) {
             return true;
         }
@@ -54,7 +54,7 @@ public abstract class Player {
      * @param player the opponent
      * @param m int corresponding to monster move
      */
-    public void attack(Player player, int m) {
+    public void attack(AbstractPlayer player, int m) {
         Random random = new Random();
         double roll = random.nextDouble();
         int isSuperEffective = 1;
